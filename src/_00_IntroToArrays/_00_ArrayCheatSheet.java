@@ -11,8 +11,7 @@ public class _00_ArrayCheatSheet {
 		//2. print the third element in the array
 		
 		System.out.println(fiveStrings[2]);
-		//3. set the third element to a dif
-		ferent value
+		//3. set the third element to a different value
 		
 		fiveStrings[2] = " 3rd string";
 		
