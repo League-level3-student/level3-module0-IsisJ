@@ -26,14 +26,42 @@ public class MoreArrayFun {
 	public static String printEven (String[] fruit) {
 		String evenFruits = "";
 		for (int i = 1; i < fruit.length; i = i+2) {
-			if(i > fruit.length) {
-				evenFruits = evenFruits + " " + fruit[i];
+			if(i == fruit.length-1 || i+2 == fruit.length) {
+				evenFruits = evenFruits+ fruit[i];
 			}else {
-				evenFruits = evenFruits + " " + fruit[i]+",";
+				evenFruits = evenFruits+fruit[i]+", ";
 			}
 		}
 		return evenFruits;
 		
+	}
+
+
+	public static String printOdd(String[] fruit) {
+		String oddFruits = "";
+		for(int i=0; i<fruit.length; i = i+2) {
+			if(i+1==fruit.length-1 || i ==fruit.length-1) {
+				oddFruits = oddFruits+ fruit[i];
+			}
+			else {
+				oddFruits = oddFruits+ fruit[i]+", ";
+			}
+		}
+		return oddFruits;
+	}
+
+
+	public static String printMiddle(String[] patterns) {
+		String middle = "";
+		if(patterns.length%2==0) {
+			middle = "This array has an even amount of values. I can't provide a middle";
+		}
+		else { 
+			float middleNum = patterns.length/2;
+			int trunkcatedMiddleNum = (int) middleNum;
+			middle = patterns[trunkcatedMiddleNum];
+		}
+		return middle;
 	}
 
 	
