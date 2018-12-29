@@ -57,9 +57,8 @@ public class MoreArrayFun {
 			middle = "This array has an even amount of values. I can't provide a middle";
 		}
 		else { 
-			float middleNum = patterns.length/2;
-			int trunkcatedMiddleNum = (int) middleNum;
-			middle = patterns[trunkcatedMiddleNum];
+			int middleNum = patterns.length/2;
+			middle = patterns[middleNum];
 		}
 		return middle;
 	}
